@@ -1,0 +1,8 @@
+@media screen and (max-width:992px){
+    html {
+        font-size: 80%;
+    }
+    .grid_item {
+        width: 80%;
+    }
+}

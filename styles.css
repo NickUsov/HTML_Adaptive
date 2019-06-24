@@ -1,0 +1,262 @@
+@import url("css/normalise.css");
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+clearfix::after, .header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #9a9a9a;
+    font-size: 1rem;
+    line-height: 1.375;
+    margin: 0;
+}
+
+.page_cell {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+/*********HEADER*******/
+/*********HEADER*******/
+
+.header {
+    border-bottom: 1px solid #9a9a9a;
+    padding: 1.8rem 0;
+}
+.phone-number, .mail-address {
+    text-decoration: none;
+    color: #000;
+}
+.phone-number {
+    font-weight: bold;
+    font-size: 1.56rem;
+}
+.mail-address {
+    color: #8a8a8a;
+}
+.header_contact {
+    float: right;
+    text-align: right;
+}
+.header_logo {
+    float: left;
+}
+.link {
+    font-weight: normal;
+    font-size: 1.1875rem;
+    text-decoration: none;
+    color: #9a9a9a;
+}
+.link:hover {
+    color: #f44336;
+    transition: 0.5s;
+}
+.nav_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.nav {
+    padding: 1.3rem;
+}
+
+/*****************************************/
+/*********** SLIDER    ***********/
+/*****************************************/
+
+.slider__item {
+    background-size: cover;
+    padding-top: 34%;
+    background: url("images/slider1.jpg") no-repeat center;
+
+}
+.slider .owl-dots .owl-dot span{
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    margin: 0 0.4rem;
+}
+.slider .owl-dots .owl-dot.active span {
+    background: #000000;
+    border-color: #000000;
+}
+.slider .owl-dots .owl-dot:hover span {
+    background: #000000;
+    border-color: #000000;
+}
+.slider .owl-dots {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0.5rem;
+
+}
+/*****************************************/
+/*********** END  SLIDER   ***********/
+/*****************************************/
+
+/*****************************************/
+/*********** ABOUT US    ***********/
+/*****************************************/
+
+
+.section_headline{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.75rem;
+    font-weight: normal;
+    color: #000000;
+    text-align: center;
+    margin: 2rem 0;
+}
+p{
+    margin: 1.25rem 0;
+}
+/*****************************************/
+/*********** ABOUT US END   ***********/
+/*****************************************/
+
+/*****************************************/
+/*********** Popular section    ***********/
+/*****************************************/
+
+.grid_container {
+/*    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 320px);
+    grid-gap: 25px;*/
+    margin-top: 25px;
+}
+.grid_item {
+
+    float: left;
+    width: 47%;
+    margin:10px  1.7%;
+    position: relative;
+}
+.grid_item:nth-last-of-type(2n) {
+    margin-right: 0;
+}
+.grid__wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+.grid__picture {
+    max-width: 100%;
+    display: block;
+
+}
+.grid__wrap:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.grid__text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.grid__link {
+    color: #f4f4f4;
+    text-align: center;
+    font-size: 1.8125rem;
+}
+/*.grid__wrap:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.grid__text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.grid__link {
+    color: #f4f4f4;
+    text-align: center;
+    font-size: 1.8125rem;
+}
+.grid__picture {
+    width: 100%;
+}*/
+/*****************************************/
+/*********** Popular section End***********/
+/*****************************************/
+
+/*****************************************/
+/*********** Our Advantage    ***********/
+/*****************************************/
+
+.advantage {
+    display: flex;
+    flex-direction: row;
+
+}
+.advantage_icon {
+    display: block;
+}
+.advantage_item {
+    text-align: center;
+    width: 28%;
+    margin-right: 8%;
+}
+.advantage_item:last-child {
+    margin-right: 0;
+}
+h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0.8rem 0;
+}
+.grid__text {
+    font-size: 1.75rem;
+    color: #ffffff;
+}
+/*****************************************/
+/*********** Our Advantage End   ***********/
+/*****************************************/
+
+/*****************************************/
+/***********      Footer    ***********/
+/*****************************************/
+
+.page_row_footer {
+    background: #595959;
+
+    font-size: 1rem;
+    margin-top: 4rem;
+}
+.footer_copyright {
+    text-align: right;
+    color: #ffffff;
+}
+.footer_link {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1rem;
+}
+.footer {
+    padding: 1.2rem;
+
+}
+
+/*****************************************/
+/***********      Footer END   ***********/
+/*****************************************/
